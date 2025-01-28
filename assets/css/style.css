@@ -1403,7 +1403,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar,
   article {
-    width: 520px;
+    width: 10000px;
     margin-inline: auto;
     padding: 30px;
   }
