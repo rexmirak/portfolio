@@ -120,6 +120,7 @@
 
 a {
   text-decoration: none;
+  color: aqua;
 }
 
 li {
@@ -128,7 +129,7 @@ li {
 
 img,
 ion-icon,
-a,
+/* a, */
 button,
 time,
 span {
@@ -925,6 +926,29 @@ main {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
+}
+
+/*  */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  color: white;
+}
+.column {
+  padding: 5px;
+}
+.h5 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 5px;
 }
 
 /*-----------------------------------*\
