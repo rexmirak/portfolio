@@ -951,6 +951,13 @@ li {
   margin-bottom: 5px;
 }
 
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* Switch to single column */
+  }
+}
+
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
