@@ -25,6 +25,10 @@
                         <ion-icon name="logo-github"></ion-icon>
                         View on GitHub
                     </a>
+                    <a href="https://pypi.org/project/stage-tracker/" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #3775A9; text-decoration: none; background: var(--bg-gradient-onyx); border: 1px solid rgba(55, 117, 169, 0.3); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8); transition: var(--transition-1);">
+                        <ion-icon name="cube-outline"></ion-icon>
+                        View on PyPI
+                    </a>
                 </div>
                 <p style="color: var(--light-gray); font-size: var(--fs-5); line-height: 1.6;">A lightweight, zero-dependency Python library for tracking multi-stage pipeline executions with UUID-based run identification and structured JSON output.</p>
             </header>
@@ -85,27 +89,42 @@
                 <div style="display: grid; gap: 15px;">
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🔍 Zero-Dependency Architecture</h4>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="search-outline" style="font-size: 20px;"></ion-icon>
+                            Zero-Dependency Architecture
+                        </h4>
                         <p style="color: var(--light-gray); line-height: 1.6;">Designed entirely using Python's standard library (uuid, datetime, json) with no external dependencies, ensuring compatibility across environments and eliminating version conflicts or installation friction.</p>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">📦 Pip-Installable Package</h4>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="cube-outline" style="font-size: 20px;"></ion-icon>
+                            Pip-Installable Package
+                        </h4>
                         <p style="color: var(--light-gray); line-height: 1.6;">Published to PyPI as a production-ready pip package with proper versioning, enabling seamless integration into existing projects with a single `pip install stage-tracker` command.</p>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">⏱️ Precise Timing & Exception Tracking</h4>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="time-outline" style="font-size: 20px;"></ion-icon>
+                            Precise Timing & Exception Tracking
+                        </h4>
                         <p style="color: var(--light-gray); line-height: 1.6;">Implemented microsecond-precision ISO 8601 timestamps for stage start/end times plus automatic exception recording with full tracebacks, enabling detailed performance analysis and failure debugging.</p>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🔗 UUID-Based Run Correlation</h4>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="link-outline" style="font-size: 20px;"></ion-icon>
+                            UUID-Based Run Correlation
+                        </h4>
                         <p style="color: var(--light-gray); line-height: 1.6;">Built unique UUID4 identification for each execution, allowing correlation across distributed systems, log aggregation, and tracing complex multi-step workflows across different services or machines.</p>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">📊 Structured JSON Serialization</h4>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="stats-chart-outline" style="font-size: 20px;"></ion-icon>
+                            Structured JSON Serialization
+                        </h4>
                         <p style="color: var(--light-gray); line-height: 1.6;">Designed comprehensive JSON schema capturing arguments, timestamps, stage sequences, and exceptions—ideal for parsing with analytics tools, databases, or visualization dashboards for experiment tracking.</p>
                     </div>
                 </div>

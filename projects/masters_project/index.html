@@ -18,13 +18,13 @@
                     <ion-icon name="arrow-back-outline"></ion-icon>
                     Back to Portfolio
                 </a>
-                <h1 style="color: var(--white-2); font-size: 32px; margin-bottom: 15px;">A Self-Adaptive Agentic Moving Target Defense Architecture</h1>
+                <h1 style="color: var(--white-2); font-size: 32px; margin-bottom: 15px;">LLM-Powered Moving Target Defense for Real-Time Cyber Threat Response</h1>
                 <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
                     <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: rgba(239, 68, 68, 0.9); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">Cybersecurity</span>
-                    <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: rgba(168, 85, 247, 0.9); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">AI & Machine Learning</span>
+                    <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: rgba(168, 85, 247, 0.9); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">Large Language Models</span>
                     <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: var(--orange-yellow-crayola); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">Master's Thesis</span>
                 </div>
-                <p style="color: var(--light-gray); font-size: var(--fs-5); line-height: 1.6;">An intelligent intrusion prevention system combining reinforcement learning agents with moving target defense for real-time, autonomous cyber threat response.</p>
+                <p style="color: var(--light-gray); font-size: var(--fs-5); line-height: 1.6;">A self-adaptive agentic architecture leveraging Large Language Models to orchestrate Moving Target Defense actions in real-time, achieving automated incident response from detection to mitigation in under 2 minutes.</p>
             </header>
 
             <!-- Problem & Solution -->
@@ -37,11 +37,11 @@
                     <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
                     <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Problem</h3>
                     <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 20px;">
-                        Traditional intrusion prevention systems rely on static rulesets and manual response workflows, creating response delays measured in hours or days. Modern adversaries exploit this lag, moving laterally through networks before defenders react. Static defenses become predictable, allowing attackers to probe and map attack surfaces over time. Security teams face alert fatigue from high false positive rates, while critical threats slip through during triage backlogs.
+                        Traditional intrusion prevention systems rely on static rulesets and manual response workflows, creating response delays of 1-24 hours. In 2024, 19% of data exfiltration attacks occurred within one hour of compromise. Static defenses are predictable—attackers can probe and map attack surfaces over time. Moving Target Defense (MTD) promises to shift attack surfaces dynamically, but conventional rule-based controllers lack the real-time adaptability and context-aware decision-making that MTD demands.
                     </p>
                     <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Solution</h3>
                     <p style="color: var(--light-gray); line-height: 1.8;">
-                        This thesis presents a self-adaptive agentic architecture combining reinforcement learning with moving target defense (MTD) principles. Autonomous agents analyze security alerts in real-time, make triage decisions without human intervention, and dynamically reconfigure system defenses to create an unpredictable attack surface. The system learns optimal response strategies through Q-learning, continuously adapting its defense posture based on observed attack patterns while maintaining operational availability.
+                        This thesis presents the first LLM-powered MTD architecture using an agentic pipeline that orchestrates threat analysis, action planning, validation, and execution without any model training or fine-tuning. By leveraging Large Language Models' natural language reasoning and prompt engineering techniques (few-shot learning, Chain-of-Thought, schema-based outputs), the system ingests IDS alerts, enriches them with MITRE ATT&CK TTPs and CVE intelligence via RAG, and autonomously generates multi-layered defense plans. The modular agent design achieved 75-87.5% execution success across network shuffling techniques while reducing incident response time to under 2 minutes.
                     </p>
                 </div>
             </section>
@@ -55,11 +55,13 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--white-2); margin-bottom: 12px;">AI & Machine Learning</h4>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">AI & LLM Techniques</h4>
                         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Reinforcement Learning</span>
-                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Q-Learning</span>
-                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Multi-Agent Systems</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Large Language Models</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Prompt Engineering</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">RAG (Retrieval-Augmented Generation)</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Chain-of-Thought</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Agentic Architecture</span>
                         </div>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
@@ -73,13 +75,47 @@
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Implementation</h4>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Implementation Stack</h4>
                         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
                             <span style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Python</span>
-                            <span style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">NumPy</span>
-                            <span style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Simulation Framework</span>
+                            <span style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Llama 3.2 / DeepSeek R1 / Qwen 2.5</span>
+                            <span style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">ChromaDB Vector Database</span>
+                            <span style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Snort IDS</span>
+                            <span style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Docker</span>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- System Architecture & Pipeline -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="git-network-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    System Architecture & Agentic Pipeline
+                </h2>
+                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative; margin-bottom: 20px;">
+                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                    <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 20px;">
+                        The system follows a modular agentic design where each agent performs a specialized task. Starting from raw Snort IDS alerts, the pipeline transforms technical logs into natural language, enriches them with threat intelligence, makes autonomous triage decisions, plans MTD responses, validates plans for soundness, and executes approved actions through tool integration.
+                    </p>
+                    <img src="../../assets/images/projects/masters_project/Rewriter-3.png" alt="LLM-Powered MTD Agentic Pipeline Architecture" style="width: 100%; border-radius: 12px; margin-top: 15px;">
+                    <p style="color: var(--light-gray-70); font-size: var(--fs-8); margin-top: 10px; text-align: center;">Complete agentic pipeline showing the flow from IDS alert detection through preprocessing, enrichment, decision-making, planning, evaluation, and execution phases.</p>
+                </div>
+            </section>
+
+            <!-- Performance Analysis -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="analytics-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Performance & Runtime Analysis
+                </h2>
+                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative;">
+                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                    <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 20px;">
+                        Comparative analysis across three LLMs (Llama 3.2, DeepSeek R1, Qwen 2.5) shows total execution time from alert generation to MTD action completion. Llama 3.2 achieved the lowest average latency (~54s) due to optimized Grouped Query Attention, while DeepSeek and Qwen traded speed for higher plan quality through deeper reasoning architectures.
+                    </p>
+                    <img src="../../assets/images/projects/masters_project/av_tot_exec_final.png" alt="Average Total Execution Time Comparison Across LLMs" style="width: 100%; border-radius: 12px; margin-top: 15px;">
+                    <p style="color: var(--light-gray-70); font-size: var(--fs-8); margin-top: 10px; text-align: center;">Average total runtime including both cold-start and warm-run scenarios across the three evaluated LLMs. All models achieved response times under 2 minutes.</p>
                 </div>
             </section>
 
@@ -92,28 +128,51 @@
                 <div style="display: grid; gap: 15px;">
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🤖 Agentic Architecture for Autonomous Response</h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Designed a multi-agent system where autonomous agents handle alert analysis, threat triage, and containment decisions without human intervention, reducing mean-time-to-response from hours to milliseconds.</p>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="git-network-outline" style="font-size: 20px;"></ion-icon>
+                            Modular Agentic Pipeline for Zero-Shot MTD
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Designed a six-agent pipeline (Rewrite, Extractor, Enrichment, Detection, Response, Evaluation, Execution) where each module can be invoked independently for debugging and fine-grained control. No model training required—all orchestration achieved through prompt engineering (few-shot, CoT, schema-based outputs).</p>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🎯 Adaptive Moving Target Defense</h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Integrated reinforcement learning with MTD techniques to dynamically reconfigure network parameters (IP rotation, port shuffling, service migration), creating an unpredictable attack surface that increases attacker workload exponentially.</p>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="library-outline" style="font-size: 20px;"></ion-icon>
+                            RAG-Enhanced Threat Intelligence Integration
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Implemented retrieval-augmented generation using ChromaDB vector database to enrich alerts with MITRE ATT&CK TTPs and CVE data. Achieved 80% retrieval accuracy at 0.48 average cosine similarity by rewriting raw Snort alerts into natural language queries, enabling LLMs to reason with external threat intelligence.</p>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">📊 Q-Learning for Defense Strategy Optimization</h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Implemented Q-learning algorithms enabling the system to learn optimal defense strategies through simulated attack scenarios, balancing security posture against operational availability and performance overhead.</p>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="shuffle-outline" style="font-size: 20px;"></ion-icon>
+                            Multi-Layered Network Shuffling Actions
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Implemented four MTD techniques from the "Shuffling" and "Dynamic Networks" categories: IP randomization from predefined pools, port shuffling via Docker remapping, DNS service name rotation, and decoy traffic generation. Demonstrated that stacking multiple actions increases attacker cost exponentially.</p>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">⚖️ Balance Security and Availability</h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Developed reward functions and constraint mechanisms ensuring defense adaptations maintain service availability while maximizing attack surface unpredictability—critical for production environments where downtime is unacceptable.</p>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="checkmark-done-outline" style="font-size: 20px;"></ion-icon>
+                            High Consistency and Execution Success
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Achieved 100% output consistency across Detection and Preprocessing agents (Llama 3.2, DeepSeek R1, Qwen 2.5), with Response and Evaluation agents showing near-perfect semantic similarity (>95%). DeepSeek and Qwen reached 100% plan completeness, while execution success rates ranged from 75% (Llama/DeepSeek) to 87.5% (Qwen).</p>
                     </div>
                     <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
                         <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🔬 Proof-of-Concept Implementation</h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Built simulation framework demonstrating the architecture's effectiveness against multi-stage attack scenarios, providing empirical evidence for autonomous defense viability in enterprise networks.</p>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="flash-outline" style="font-size: 20px;"></ion-icon>
+                            Real-Time Response: Detection to Mitigation in Under 2 Minutes
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Reduced incident response time from industry-standard 1-24 hours to under 2 minutes end-to-end (cold-start: 52-77s, warm runs: 55-90s). Llama 3.2 demonstrated lowest latency via Grouped Query Attention optimizations, while DeepSeek/Qwen traded speed for higher plan quality through deeper reasoning architectures.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="flask-outline" style="font-size: 20px;"></ion-icon>
+                            Validated Against Real Attack Scenarios
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Tested on reconnaissance and SSH brute-force attacks using Metasploitable2 vulnerable targets in isolated testbed with Snort IDS. Demonstrated successful autonomous detection, enrichment, planning, validation, and execution across both cold-start and continuous operation modes.</p>
                     </div>
                 </div>
             </section>
@@ -127,34 +186,19 @@
                 <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative;">
                     <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
                     <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 15px;">
-                        This thesis bridges the gap between AI research and practical cybersecurity operations, demonstrating how reinforcement learning can automate traditionally manual security workflows. The architecture addresses a critical industry need: organizations facing sophisticated persistent threats require systems that adapt faster than human analysts can respond.
+                        This thesis demonstrates the first practical integration of Large Language Models as real-time orchestrators for Moving Target Defense systems. Unlike existing ML-powered MTD approaches that require extensive training data, model fine-tuning, or operate as separate silos, this LLM-powered architecture achieves fully autonomous, zero-shot defense adaptation through natural language reasoning alone.
                     </p>
                     <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 15px;">
-                        By combining agentic AI with moving target defense, the work contributes to the emerging field of autonomous cyber defense, where systems proactively reshape their attack surfaces rather than reactively responding to detected intrusions.
+                        By treating system telemetry, threat intelligence, and defense policies as conversational prompts, the architecture delivers transparent, explainable decisions while eliminating the need for custom retraining of individual MTD components. The modular agentic design addresses a critical industry gap: reducing incident response time from 1-24 hours (industry standard in 2023-2024) to under 2 minutes—a 30-720x improvement.
+                    </p>
+                    <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 15px;">
+                        The work contributes to the emerging field of LLM-driven cybersecurity automation, demonstrating that prompt engineering techniques (Chain-of-Thought, RAG, schema-based outputs) can achieve deterministic, policy-compliant defense orchestration without sacrificing auditability. With 54% of organizations planning to use AI for incident response automation (CompTIA 2024), this research provides a practical blueprint for self-adaptive cyber defense at scale.
                     </p>
                     <div style="margin-top: 20px; padding: 15px; background: rgba(255, 165, 0, 0.1); border-left: 3px solid var(--orange-yellow-crayola); border-radius: 8px;">
                         <p style="color: var(--white-2); margin: 0;"><strong>Thesis Title:</strong> A Self-Adaptive Agentic Moving Target Defense Architecture for Real-Time Cyber Threat Response</p>
                     </div>
                 </div>
             </section>
-
-            <!-- Thesis Document -->
-            <section style="margin-bottom: 40px;">
-                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <ion-icon name="download-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
-                    Thesis Document
-                </h2>
-                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative; text-align: center;">
-                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                    <ion-icon name="document-text" style="color: var(--orange-yellow-crayola); font-size: 64px; margin-bottom: 15px;"></ion-icon>
-                    <p style="color: var(--light-gray); margin-bottom: 20px;">Full thesis document available for review</p>
-                    <a href="../../assets/images/projects/masters_project/A Self-Adaptive Agentic Moving Target Defense Architecture for Real-Time Cyber Threat Response-2.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; color: var(--black); background: var(--orange-yellow-crayola); padding: 12px 24px; border-radius: 14px; text-decoration: none; font-weight: 600; transition: var(--transition-1);">
-                        <ion-icon name="document-outline"></ion-icon>
-                        Download Full Thesis (PDF)
-                    </a>
-                </div>
-            </section>
-
             <!-- Footer -->
             <footer style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--jet); text-align: center;">
                 <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--orange-yellow-crayola); font-size: var(--fs-6); text-decoration: none;">
