@@ -338,7 +338,8 @@ main {
 }
 
 .sidebar.active {
-  max-height: 405px;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .sidebar-info {
@@ -346,20 +347,30 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .info-content .name {
   color: var(--white-2);
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .info-content .title {
@@ -368,19 +379,19 @@ main {
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
-  padding: 3px 12px;
+  padding: 2px 10px;
   border-radius: 8px;
 }
 
 .info_more-btn {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: -12px;
+  right: -12px;
   border-radius: 0 15px;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
-  padding: 10px;
+  padding: 8px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   z-index: 1;
@@ -424,14 +435,14 @@ main {
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 12px;
 }
 
 .contact-item {
   min-width: 100%;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .contact-info {
@@ -455,13 +466,44 @@ main {
   font-style: normal;
 }
 
+/* CV Download Button */
+.cv-download {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-7);
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.cv-link ion-icon {
+  font-size: 20px;
+  color: var(--orange-yellow-crayola);
+}
+
+.cv-link:hover {
+  color: var(--light-gray);
+}
+
+.cv-link:hover ion-icon {
+  color: var(--light-gray);
+}
+
 .social-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   padding-bottom: 4px;
-  padding-left: 7px;
+  margin-top: 1rem;
 }
 
 .social-item .social-link {
@@ -1366,6 +1408,17 @@ li {
 /* Certification grid: 2 per row by default (tablets) */
 .project-list.cert-grid {
   grid-template-columns: 1fr 1fr;
+}
+
+.project-list.cert-grid .project-img {
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+  min-height: auto !important;
+  max-height: none !important;
+}
+
+.project-list.cert-grid .project-img img {
+  object-fit: contain;
 }
 
 .project-item {

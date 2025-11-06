@@ -45,16 +45,16 @@
         <div class="sidebar-info">
           <figure class="avatar-box">
             <img
-              src="./assets/images/myPicture.png"
+              src="./assets/images/profile/profile_image.png"
               alt="Karim Ahmed"
-              width="80"
+              width="140"
             />
           </figure>
 
           <div class="info-content">
             <h1 class="name" title="Karim Ahmed">Karim Ahmed</h1>
 
-            <p class="title">Software Engineer</p>
+            <p class="title" style="text-align: center;">Cybersecurity Researcher <br /> and Engineer</p>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
@@ -84,32 +84,6 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a href="tel:+12133522795" class="contact-link"
-                  >+201118808688</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">November 20, 2000</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
                 <ion-icon name="location-outline"></ion-icon>
               </div>
 
@@ -120,8 +94,6 @@
               </div>
             </li>
           </ul>
-
-          <div class="separator"></div>
 
           <ul class="social-list">
             <li class="social-item">
@@ -144,8 +116,22 @@
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
+
+            <li class="social-item">
+              <a href="https://substack.com/@rexmirak" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </a>
+            </li>
           </ul>
         </div>
+                  <!-- CV Download Button -->
+          <div class="cv-download">
+            <a href="./assets/Karim Ahmed - Security.pdf" download="Karim_Ahmed_CV.pdf" class="cv-link">
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span>Download CV</span>
+            </a>
+          </div>
+
       </aside>
 
       <!--
@@ -170,16 +156,6 @@
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Portfolio</button>
             </li>
-            <!--
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-                  -->
           </ul>
         </nav>
 
@@ -194,11 +170,15 @@
 
                     <section class="about-text">
             <p>
-              I am Karim Ahmed, a <span style="display: inline; font-weight: bold;">cybersecurity researcher, AI engineer, and educator</span> driven by an unwavering passion for building secure, intelligent systems that protect and empower. My journey from Computer Science undergraduate to Master's researcher at The German University in Cairo has been marked by resilience—<span style="display: inline; font-weight: bold;">balancing rigorous academic research on adaptive cyber defense with teaching over 250 students</span> while continuously pushing the boundaries of what's possible at the intersection of AI and cybersecurity. Professionally, I architect secure cloud infrastructures, develop AI-driven defense mechanisms, and craft full-stack applications—but what truly drives me is the challenge of solving complex problems that others might deem impossible. Whether I'm analyzing threat patterns with MITRE ATT&CK, training reinforcement learning agents for adaptive security, or deploying containerized applications on AWS, I approach each challenge with the same relentless curiosity and determination that has defined my career.
+              I'm Karim Ahmed, a <span style="display: inline; font-weight: bold;">cybersecurity researcher, AI engineer, and educator</span> with a Master's degree in Computer Science and Engineering from The German University in Cairo, specializing in <span style="display: inline; font-weight: bold;">AI and cybersecurity at their intersection</span>—both offensive (red team) and defensive (blue team) operations. As an <span style="display: inline; font-weight: bold;">ISC2 member since October 2024</span> and Senior Teaching Assistant, I combine cutting-edge research with practical teaching experience (250+ students) in advanced computing and cloud technologies.
             </p>
 
             <p>
-              Beyond the technical realm, <span style="display: inline; font-weight: bold;">I live by the principle that knowledge multiplies when shared.</span> As a Teaching Assistant, I don't just teach—I mentor, inspire, and watch my students transform abstract concepts into real-world solutions. My resilience has been tested through countless debugging sessions, failed experiments, and pivot points in research, yet each setback has only strengthened my resolve to innovate. My passion extends from developing RAG pipelines and LLM applications to mentoring the next generation of tech professionals, always with an eye toward creating technology that serves humanity. <span style="display: inline; font-weight: bold;">I'm not just building systems; I'm building a legacy of secure, intelligent, and accessible technology</span>—one line of code, one research paper, one breakthrough at a time. This combination of technical expertise, teaching excellence, and unwavering commitment to continuous growth makes me not just a developer or researcher, but a catalyst for innovation in everything I touch.
+              My expertise spans <span style="display: inline; font-weight: bold;">AI-powered security solutions, adaptive cyber defense, and full-stack development.</span> I architect intelligent security systems using MITRE ATT&CK and D3FEND frameworks, develop reinforcement learning agents for moving target defense, and build production applications with the MERN stack. My Master's thesis focused on self-adaptive agentic architectures for real-time cyber threat response—pioneering automated defense mechanisms that leverage AI for both red team attack simulation and blue team incident response.
+            </p>
+
+            <p>
+              I bring <span style="display: inline; font-weight: bold;">resilience, innovation, and deep technical expertise</span> to every challenge. Whether conducting penetration testing, developing RAG pipelines and LLM applications, or deploying secure cloud infrastructure on AWS, I'm driven to build intelligent security solutions that protect organizations while advancing the field through research and mentorship.
             </p>
           </section>
 
@@ -268,263 +248,9 @@
               </li>
             </ul>
           </section>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <ion-icon name="cube"></ion-icon>
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Software Development & Prototyping</h4>
-
-                  <p class="service-item-text">
-                    Whether it’s building a research-based game, or developing desktop applications, I can create functional and innovative software solutions. My proficiency in Java, Python, and C# allows me to tackle diverse development challenges.                  </p>
-                </div>
-              </li>
             </ul>
           </section>
 
-          <!--
-          - testimonials
-        -->
-          <!--           <section class="testimonials">
-            <h3 class="h3 testimonials-title">Testimonials</h3>
-
-            <ul class="testimonials-list has-scrollbar">
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-1.png"
-                      alt="Daniel lewis"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Daniel lewis
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-3.png"
-                      alt="Emily evans"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Emily evans
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-4.png"
-                      alt="Henry william"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Henry william
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section> -->
-          <!--
-          - testimonials modal
-        -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!--
-          - clients
-        -->
-          <!-- 
-  
-          <section class="clients">
-            <h3 class="h3 clients-title">Clients</h3>
-
-            <ul class="clients-list has-scrollbar">
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-1-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-2-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-3-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-4-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-5-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-6-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </section>
- -->
         </article>
 
         <!--

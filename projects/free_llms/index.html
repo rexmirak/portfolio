@@ -8,11 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- project-specific styles are provided by global stylesheet -->
+    <style>
+        :root {
+            --white-2: hsl(0, 0%, 98%);
+            --orange-yellow-crayola: hsl(45, 100%, 72%);
+            --light-gray: hsl(0, 0%, 84%);
+            --jet: hsl(0, 0%, 22%);
+            --eerie-black-2: hsl(240, 2%, 12%);
+            --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+            --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+            --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+            --transition-1: 0.25s ease;
+            --fs-4: 16px;
+            --fs-6: 14px;
+            --fs-8: 11px;
+        }
+    </style>
 </head>
 <body style="background: hsl(0, 0%, 7%); color: hsl(0, 0%, 84%); font-family: 'Poppins', sans-serif; margin: 0; padding: 0;">
     <main class="project-detail-wrapper">
-        <article class="project-detail active">
+        <article class="project-detail">
             <!-- Header -->
             <header>
                 <a href="../../index.html" class="back-link">
@@ -22,7 +37,7 @@
                 <h1>Free LLMs - Local AI Interface</h1>
                 <div class="category-tags">
                     <span class="category-tag" style="color: rgba(168, 85, 247, 0.9);">AI & Machine Learning</span>
-                    <a href="https://github.com/rexmirak/free-llms" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: var(--white-2); text-decoration: none; background: var(--bg-gradient-onyx); border: 1px solid var(--jet); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8); transition: var(--transition-1);">
+                    <a href="https://github.com/rexmirak/free-llms" target="_blank" class="github-link">
                         <ion-icon name="logo-github"></ion-icon>
                         View on GitHub
                     </a>
@@ -140,7 +155,7 @@
 
             <!-- Footer -->
             <footer style="margin-top: 50px; padding-top: 30px; border-top: 1px solid hsl(0, 0%, 22%); text-align: center;">
-                <a href="../../index.html" class="back-link">
+                <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 8px; color: hsl(45, 100%, 72%); font-size: 14px; text-decoration: none;">
                     <ion-icon name="arrow-back-outline"></ion-icon>
                     Back to Portfolio
                 </a>
