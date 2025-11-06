@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex Scan - Penetration Testing Toolkit - Karim Ahmed</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body style="background: hsl(0, 0%, 7%); color: hsl(0, 0%, 84%); font-family: 'Poppins', sans-serif;">
+    <main class="project-detail-wrapper">
+        <article class="project-detail active">
+            <!-- Header -->
+            <header style="margin-bottom: 40px;">
+                <a href="../../index.html" class="back-link" style="margin-bottom: 20px;">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Back to Portfolio
+                </a>
+                <h1 style="color: var(--white-2); font-size: 32px; margin-bottom: 15px;">Rex Scan - Penetration Testing Toolkit</h1>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
+                    <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: rgba(239, 68, 68, 0.9); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">Cybersecurity</span>
+                    <a href="https://github.com/rexmirak/rex-scan" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: var(--white-2); text-decoration: none; background: var(--bg-gradient-onyx); border: 1px solid var(--jet); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8); transition: var(--transition-1);">
+                        <ion-icon name="logo-github"></ion-icon>
+                        View on GitHub
+                    </a>
+                </div>
+                <p style="color: var(--light-gray); font-size: var(--fs-5); line-height: 1.6;">A comprehensive automated network reconnaissance and vulnerability scanner designed for penetration testers and security professionals.</p>
+            </header>
+
+            <!-- Problem & Solution -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="bulb-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Problem & Solution
+                </h2>
+                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative;">
+                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                    <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Problem</h3>
+                    <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 20px;">
+                        Penetration testers often juggle multiple tools (nmap, searchsploit, gobuster, dnsenum) and manually correlate findings across different outputs. This fragmented workflow is time-consuming, error-prone, and makes it difficult to maintain comprehensive documentation of security assessments. Additionally, vulnerability correlation with CVEs and exploit databases requires significant manual effort.
+                    </p>
+                    <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Solution</h3>
+                    <p style="color: var(--light-gray); line-height: 1.8;">
+                        REX SCAN orchestrates the entire pentesting workflow into a single automated pipeline. It intelligently coordinates industry-standard tools, automatically correlates findings with NIST NVD CVE database, matches exploits via searchsploit, and generates comprehensive reports in multiple formats. The dual-tool architecture with Python fallbacks ensures reliability even when external tools aren't available, while command transparency provides complete audit trails for compliance and reproducibility.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Technologies Used -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="construct-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Technologies Used
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Core Framework</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Python 3.8+</span>
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">dnspython</span>
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">requests</span>
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Jinja2</span>
+                        </div>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Security Tools</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">nmap</span>
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">searchsploit</span>
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">gobuster</span>
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">dnsenum</span>
+                        </div>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">APIs & Data</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">NIST NVD API</span>
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Cloudflare DoH</span>
+                            <span style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Features -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="star-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Key Achievements
+                </h2>
+                <div style="display: grid; gap: 15px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🔍 Automated CVE Correlation</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Engineered real-time vulnerability correlation with NIST NVD API, automatically matching detected services and versions to known CVEs with CVSS v3.1/v2.0 scoring, significantly reducing manual research time.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🛠️ Dual-Tool Architecture</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Designed an intelligent fallback system with Python implementations for critical modules (DNS, directory enumeration), ensuring core functionality works even when external tools aren't available while maintaining performance when they are.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">📊 Comprehensive Reporting</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Built multi-format reporting system (Text, JSON, HTML) with interactive dashboards featuring charts, visualizations, and complete command transparency—every external command logged with full output for reproducibility and compliance.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🔄 Scan Resumption & State Management</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Implemented robust state management allowing scans to be interrupted and resumed without data loss, crucial for long-running assessments against large networks or during rate-limited scanning.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">⚡ Flexible Scan Profiles</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Developed pre-configured scan profiles (stealth, balanced, aggressive, quick, full) optimized for different scenarios, from IDS evasion to comprehensive full-port assessments, with custom profile support.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Screenshots -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="images-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Screenshots
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/rex_scan/Screenshot 2025-11-05 at 13.54.35.png" alt="Rex Scan CLI" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Command Line Interface</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/rex_scan/Screenshot 2025-11-05 at 13.54.53.png" alt="Scan Results" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Vulnerability Detection</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/rex_scan/Screenshot 2025-11-05 at 13.55.06.png" alt="Report Generation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">CVE Correlation</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/rex_scan/Screenshot 2025-11-05 at 13.55.18.png" alt="Module Output" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Enumeration Results</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/rex_scan/Screenshot 2025-11-05 at 13.57.01.png" alt="Progress Tracking" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Real-time Progress</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/rex_scan/Screenshot 2025-11-05 at 13.57.44.png" alt="Report Dashboard" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Interactive Report</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--jet); text-align: center;">
+                <a href="../../index.html" class="back-link">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Back to Portfolio
+                </a>
+            </footer>
+        </article>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

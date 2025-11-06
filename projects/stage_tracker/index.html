@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Tracker - Pipeline Execution Monitor - Karim Ahmed</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body style="background: hsl(0, 0%, 7%); color: hsl(0, 0%, 84%); font-family: 'Poppins', sans-serif;">
+    <main class="project-detail-wrapper">
+        <article class="project-detail active">
+            <!-- Header -->
+            <header style="margin-bottom: 40px;">
+                <a href="../../index.html" class="back-link" style="margin-bottom: 20px;">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Back to Portfolio
+                </a>
+                <h1 style="color: var(--white-2); font-size: 32px; margin-bottom: 15px;">Stage Tracker - Pipeline Execution Monitor</h1>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
+                    <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: rgba(99, 102, 241, 0.9); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">DevOps Tools</span>
+                    <a href="https://github.com/rexmirak/stage-tracker" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: var(--white-2); text-decoration: none; background: var(--bg-gradient-onyx); border: 1px solid var(--jet); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8); transition: var(--transition-1);">
+                        <ion-icon name="logo-github"></ion-icon>
+                        View on GitHub
+                    </a>
+                </div>
+                <p style="color: var(--light-gray); font-size: var(--fs-5); line-height: 1.6;">A lightweight, zero-dependency Python library for tracking multi-stage pipeline executions with UUID-based run identification and structured JSON output.</p>
+            </header>
+
+            <!-- Problem & Solution -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="bulb-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Problem & Solution
+                </h2>
+                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative;">
+                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                    <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Problem</h3>
+                    <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 20px;">
+                        Complex pipelines—whether AI/ML experiments, cybersecurity workflows, or ETL jobs—lack standardized tracking mechanisms. Debugging failures, reproducing results, or understanding execution flow becomes challenging without structured logging. Most solutions require heavy dependencies or framework lock-in, adding overhead to simple projects.
+                    </p>
+                    <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Solution</h3>
+                    <p style="color: var(--light-gray); line-height: 1.8;">
+                        Stage Tracker provides a minimal, framework-agnostic API for tracking pipeline executions. Each run gets a unique UUID, stages record precise ISO timestamps, and outputs serialize to structured JSON. With zero external dependencies, it integrates seamlessly into existing codebases—whether you're tracking reinforcement learning episodes, penetration testing phases, or data processing batches.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Technologies Used -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="construct-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Technologies Used
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Core Technology</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Pure Python 3.8+</span>
+                            <span style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Zero Dependencies</span>
+                            <span style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Standard Library Only</span>
+                        </div>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Key Features</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">UUID Tracking</span>
+                            <span style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">ISO Timestamps</span>
+                            <span style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">JSON Output</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Features -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="star-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Key Achievements
+                </h2>
+                <div style="display: grid; gap: 15px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🔍 Zero-Dependency Architecture</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Designed entirely using Python's standard library (uuid, datetime, json) with no external dependencies, ensuring compatibility across environments and eliminating version conflicts or installation friction.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">📦 Pip-Installable Package</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Published to PyPI as a production-ready pip package with proper versioning, enabling seamless integration into existing projects with a single `pip install stage-tracker` command.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">⏱️ Precise Timing & Exception Tracking</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Implemented microsecond-precision ISO 8601 timestamps for stage start/end times plus automatic exception recording with full tracebacks, enabling detailed performance analysis and failure debugging.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">🔗 UUID-Based Run Correlation</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Built unique UUID4 identification for each execution, allowing correlation across distributed systems, log aggregation, and tracing complex multi-step workflows across different services or machines.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px;">📊 Structured JSON Serialization</h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Designed comprehensive JSON schema capturing arguments, timestamps, stage sequences, and exceptions—ideal for parsing with analytics tools, databases, or visualization dashboards for experiment tracking.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Use Cases -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="rocket-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Primary Use Cases
+                </h2>
+                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative;">
+                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                    <ul style="color: var(--light-gray); line-height: 2; padding-left: 20px;">
+                        <li><strong style="color: var(--white-2);">AI/ML Experiment Tracking:</strong> Monitor training episodes, hyperparameter sweeps, and model evaluation stages with reproducible run IDs</li>
+                        <li><strong style="color: var(--white-2);">Cybersecurity Pipelines:</strong> Track penetration testing phases (reconnaissance → scanning → exploitation → reporting) with complete audit trails</li>
+                        <li><strong style="color: var(--white-2);">ETL & Data Processing:</strong> Monitor batch job stages (extract → transform → validate → load) with performance metrics and failure points</li>
+                        <li><strong style="color: var(--white-2);">Research Reproducibility:</strong> Document experimental methodology with precise timestamps and configuration parameters for academic papers</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Screenshots -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="images-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Screenshots
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/stage-tracker/Screenshot 2025-11-05 at 14.05.42.png" alt="Stage Tracker Usage" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">PyPI Package</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--jet); text-align: center;">
+                <a href="../../index.html" class="back-link">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Back to Portfolio
+                </a>
+            </footer>
+        </article>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
