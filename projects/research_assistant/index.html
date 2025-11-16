@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Assistant - LLM Research Pipeline - Karim Ahmed</title>
+    <link rel="shortcut icon" href="../../assets/images/profile/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://rexmirak.github.io/portfolio/projects/research_assistant/" />
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="LLM-powered pipeline for research PDFs: dynamic taxonomy, accurate PDF parsing with OCR, LLM metadata extraction, multi-category scoring, deduplication, and topic-focused summaries. Installable via PyPI and works with Ollama or Google Gemini.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Research Assistant",
+  "operatingSystem": "Windows, macOS, Linux",
+  "applicationCategory": "UtilitiesApplication",
+  "creator": "Karim Ahmed",
+  "url": "https://github.com/rexmirak/research_assistant"
+}
+    </script>
+</head>
+<body style="background: hsl(0, 0%, 7%); color: hsl(0, 0%, 84%); font-family: 'Poppins', sans-serif;">
+    <main style="margin: 60px auto; max-width: 1200px; padding: 0 20px;">
+        <article class="project-detail active" style="background: var(--eerie-black-2); border: 1px solid var(--jet); border-radius: 20px; padding: 40px; box-shadow: var(--shadow-1);">
+            <!-- Header -->
+            <header style="margin-bottom: 40px;">
+                <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--orange-yellow-crayola); font-size: var(--fs-6); margin-bottom: 20px; text-decoration: none;">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Back to Portfolio
+                </a>
+                <h1 style="color: var(--white-2); font-size: 32px; margin-bottom: 15px;">Research Assistant - LLM Research Pipeline</h1>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
+                    <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: rgba(168, 85, 247, 0.9); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">AI & Research Tools</span>
+                    <a href="https://github.com/rexmirak/research_assistant" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: var(--white-2); text-decoration: none; background: var(--bg-gradient-onyx); border: 1px solid var(--jet); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8); transition: var(--transition-1);">
+                        <ion-icon name="logo-github"></ion-icon>
+                        View on GitHub
+                    </a>
+                    <a href="https://pypi.org/project/research-assistant-llm/" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #3775A9; text-decoration: none; background: var(--bg-gradient-onyx); border: 1px solid rgba(55, 117, 169, 0.3); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8); transition: var(--transition-1);">
+                        <ion-icon name="cube-outline"></ion-icon>
+                        View on PyPI
+                    </a>
+                </div>
+                <p style="color: var(--light-gray); font-size: var(--fs-5); line-height: 1.6;">An intelligent, end-to-end pipeline for processing research PDFs using LLMs (Ollama or Gemini) with dynamic category generation, accurate PDF parsing with OCR fallback, LLM-based metadata extraction, multi-category scoring, deduplication, and topic-focused summarization.</p>
+            </header>
+
+            <!-- Problem & Solution -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="bulb-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Problem & Solution
+                </h2>
+                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative;">
+                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                    <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Problem</h3>
+                    <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 20px;">
+                        Organizing research PDFs is labor-intensive: extracting metadata, categorizing across multiple themes, filtering by topic relevance, detecting duplicates, and creating summaries. Manual workflows are slow, inconsistent, and hard to reproduce.
+                    </p>
+                    <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Solution</h3>
+                    <p style="color: var(--light-gray); line-height: 1.8;">
+                        Research Assistant automates this pipeline with LLMs. It generates a dynamic taxonomy from your topic, parses PDFs with OCR fallback, extracts rich metadata, scores papers across all categories, moves each to the best-fit folder, removes duplicates, and produces topic-focused summaries with CSV/JSONL indices for downstream analysis.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Technologies Used -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="construct-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Technologies Used
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Core & Parsing</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Python 3.12+</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">PyMuPDF</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">ocrmypdf</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Tesseract</span>
+                        </div>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">LLM & Embeddings</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Ollama</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Google Gemini</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">nomic-embed-text</span>
+                        </div>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Indexing & Quality</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">SQLite Cache</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">MinHash LSH</span>
+                            <span style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">pytest</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Features -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="star-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Key Achievements
+                </h2>
+                <div style="display: grid; gap: 15px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="layers-outline" style="font-size: 20px;"></ion-icon>
+                            Dynamic LLM-Driven Taxonomy
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Generates categories from your topic (no hardcoding) and scores each paper across all categories simultaneously to choose the best placement.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="document-text-outline" style="font-size: 20px;"></ion-icon>
+                            Accurate Parsing with OCR Fallback
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Uses PyMuPDF for born-digital PDFs and seamlessly falls back to OCR (ocrmypdf + Tesseract) for scanned documents, ensuring high-quality text extraction.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="git-compare-outline" style="font-size: 20px;"></ion-icon>
+                            Smart Deduplication & Resume
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Combines hash-based exact matching with MinHash for near-duplicate detection. A SQLite cache and manifests support resumable processing at scale.</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="create-outline" style="font-size: 20px;"></ion-icon>
+                            Topic-Focused Summaries & Indices
+                        </h4>
+                        <p style="color: var(--light-gray); line-height: 1.6;">Produces per-paper summaries that emphasize your topic, plus JSONL and CSV indices for analysis, and Markdown summaries per category.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Screenshots -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="images-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Screenshots
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/research_assistant/Screenshot 2025-11-16 at 09.08.00.png" alt="Taxonomy Generation" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Dynamic Taxonomy</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/research_assistant/Screenshot 2025-11-16 at 09.08.14.png" alt="Metadata Extraction" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">LLM Metadata Extraction</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/research_assistant/Screenshot 2025-11-16 at 09.08.30.png" alt="Category Scoring" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Multi-Category Scoring</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/research_assistant/Screenshot 2025-11-16 at 09.18.28.png" alt="Deduplication" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Smart Deduplication</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/research_assistant/Screenshot 2025-11-16 at 09.19.13.png" alt="Summarization" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Topic-Focused Summaries</p>
+                    </div>
+                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
+                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                        <img src="../../assets/images/projects/research_assistant/Screenshot 2025-11-16 at 09.20.13.png" alt="Outputs" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">CSV/JSONL Indices & Manifests</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--jet); text-align: center;">
+                <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--orange-yellow-crayola); font-size: var(--fs-6); text-decoration: none;">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Back to Portfolio
+                </a>
+            </footer>
+        </article>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
