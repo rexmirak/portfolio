@@ -36,6 +36,14 @@
                     <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: rgba(239, 68, 68, 0.9); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">Cybersecurity</span>
                     <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: rgba(168, 85, 247, 0.9); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">Large Language Models</span>
                     <span style="background: var(--bg-gradient-onyx); border: 1px solid var(--jet); color: var(--orange-yellow-crayola); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8);">Master's Thesis</span>
+                    <a href="https://www.researchgate.net/publication/397886667_A_Self-Adaptive_Agentic_Moving_Target_Defense_Architecture_for_Real-Time_Cyber_Threat_Response" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #00D0B5; text-decoration: none; background: var(--bg-gradient-onyx); border: 1px solid rgba(0, 208, 181, 0.3); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8); transition: var(--transition-1);">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        View on ResearchGate
+                    </a>
+                    <!-- <a href="https://doi.org/10.13140/RG.2.2.16600.55044" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #FFB000; text-decoration: none; background: var(--bg-gradient-onyx); border: 1px solid rgba(255, 176, 0, 0.3); padding: 6px 14px; border-radius: 20px; font-size: var(--fs-8); transition: var(--transition-1);">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        DOI
+                    </a> -->
                 </div>
                 <p style="color: var(--light-gray); font-size: var(--fs-5); line-height: 1.6;">A self-adaptive agentic architecture leveraging Large Language Models to orchestrate Moving Target Defense actions in real-time, achieving automated incident response from detection to mitigation in under 2 minutes.</p>
             </header>
@@ -212,6 +220,63 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Citation Section -->
+            <section style="margin-bottom: 40px;">
+                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="document-attach-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
+                    Citation
+                </h2>
+                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative;">
+                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
+                    
+                    <!-- Formatted Citation -->
+                    <div style="background: rgba(255, 176, 0, 0.05); padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 3px solid var(--orange-yellow-crayola);">
+                        <p id="citation-text" style="color: var(--white-2); line-height: 1.8; margin: 0; font-family: 'Courier New', monospace; font-size: var(--fs-6);">
+                            Ahmed, K. (2025). <em>A Self-Adaptive Agentic Moving Target Defense Architecture for Real-Time Cyber Threat Response</em>. Master's Thesis. DOI: 10.13140/RG.2.2.16600.55044
+                        </p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+                        <!-- DOI Badge -->
+                        <!-- <a href="https://doi.org/10.13140/RG.2.2.16600.55044" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #FFB000; text-decoration: none; background: rgba(255, 176, 0, 0.1); border: 1px solid rgba(255, 176, 0, 0.3); padding: 8px 16px; border-radius: 12px; font-size: var(--fs-6); transition: var(--transition-1); font-weight: 500;">
+                            <ion-icon name="bookmark-outline" style="font-size: 18px;"></ion-icon>
+                            DOI: 10.13140/RG.2.2.16600.55044
+                        </a> -->
+                        
+                        <!-- Copy Citation Button -->
+                        <button id="copy-citation-btn" style="display: inline-flex; align-items: center; gap: 8px; color: var(--white-2); background: rgba(124, 58, 237, 0.2); border: 1px solid rgba(124, 58, 237, 0.4); padding: 8px 16px; border-radius: 12px; font-size: var(--fs-6); cursor: pointer; transition: var(--transition-1); font-family: 'Poppins', sans-serif; font-weight: 500;">
+                            <ion-icon name="copy-outline" style="font-size: 18px;"></ion-icon>
+                            Copy Citation
+                        </button>
+
+                        <!-- BibTeX Export -->
+                        <button id="export-bibtex-btn" style="display: inline-flex; align-items: center; gap: 8px; color: var(--white-2); background: rgba(34, 197, 94, 0.2); border: 1px solid rgba(34, 197, 94, 0.4); padding: 8px 16px; border-radius: 12px; font-size: var(--fs-6); cursor: pointer; transition: var(--transition-1); font-family: 'Poppins', sans-serif; font-weight: 500;">
+                            <ion-icon name="download-outline" style="font-size: 18px;"></ion-icon>
+                            Export BibTeX
+                        </button>
+                    </div>
+
+                    <!-- Additional Citation Formats -->
+                    <details style="margin-top: 20px;">
+                        <summary style="color: var(--orange-yellow-crayola); cursor: pointer; font-size: var(--fs-6); font-weight: 500; padding: 10px 0; list-style: none; display: flex; align-items: center; gap: 8px;">
+                            <ion-icon name="chevron-forward-outline" style="font-size: 16px; transition: transform 0.3s;"></ion-icon>
+                            Other Citation Formats
+                        </summary>
+                        <div style="margin-top: 15px; padding: 15px; background: rgba(0, 0, 0, 0.2); border-radius: 8px;">
+                            <h4 style="color: var(--white-2); font-size: var(--fs-6); margin-bottom: 10px;">IEEE Style</h4>
+                            <p style="color: var(--light-gray); line-height: 1.6; font-size: var(--fs-7); font-family: 'Courier New', monospace; margin-bottom: 15px;">
+                                K. Ahmed, "A Self-Adaptive Agentic Moving Target Defense Architecture for Real-Time Cyber Threat Response," M.S. thesis, 2025, doi: 10.13140/RG.2.2.16600.55044.
+                            </p>
+                            <h4 style="color: var(--white-2); font-size: var(--fs-6); margin-bottom: 10px;">MLA Style</h4>
+                            <p style="color: var(--light-gray); line-height: 1.6; font-size: var(--fs-7); font-family: 'Courier New', monospace; margin: 0;">
+                                Ahmed, Karim. <em>A Self-Adaptive Agentic Moving Target Defense Architecture for Real-Time Cyber Threat Response</em>. 2025. Master's thesis, doi:10.13140/RG.2.2.16600.55044.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </section>
             <!-- Footer -->
             <footer style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--jet); text-align: center;">
                 <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--orange-yellow-crayola); font-size: var(--fs-6); text-decoration: none;">
@@ -224,5 +289,47 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        // Copy Citation functionality
+        document.getElementById('copy-citation-btn')?.addEventListener('click', function() {
+            const citationText = document.getElementById('citation-text').innerText;
+            navigator.clipboard.writeText(citationText).then(() => {
+                const btn = this;
+                const original = btn.innerHTML;
+                btn.innerHTML = '<ion-icon name="checkmark-outline" style="font-size: 18px;"></ion-icon> Copied!';
+                setTimeout(() => btn.innerHTML = original, 2000);
+            });
+        });
+
+        // Export BibTeX functionality
+        document.getElementById('export-bibtex-btn')?.addEventListener('click', function() {
+            const bibtex = `@mastersthesis{ahmed2025selfadaptive,
+  author = {Ahmed, Karim},
+  title = {A Self-Adaptive Agentic Moving Target Defense Architecture for Real-Time Cyber Threat Response},
+  school = {},
+  year = {2025},
+  doi = {10.13140/RG.2.2.16600.55044},
+  url = {https://doi.org/10.13140/RG.2.2.16600.55044}
+}`;
+            const blob = new Blob([bibtex], {type: 'text/plain'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'ahmed2025.bib';
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+
+        // Collapsible details arrow animation
+        document.querySelectorAll('details').forEach(detail => {
+            detail.addEventListener('toggle', function() {
+                const icon = this.querySelector('ion-icon');
+                if (icon) {
+                    icon.style.transform = this.open ? 'rotate(90deg)' : 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
