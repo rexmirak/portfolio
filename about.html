@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Karim Ahmed | Cybersecurity & AI Engineer</title>
+    <meta name="description" content="Learn about Karim Ahmed — cybersecurity researcher, AI engineer, and educator specializing in adaptive defense systems, AI-powered security, and full-stack development.">
+    <meta name="keywords" content="Karim Ahmed, About, Cybersecurity Engineer, AI Engineer, ISC2 Member, Security Researcher, Teaching Assistant">
+    <meta name="author" content="Karim Ahmed">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://rexmirak.github.io/portfolio/about.html">
+    <meta property="og:title" content="About - Karim Ahmed | Cybersecurity & AI Engineer">
+    <meta property="og:description" content="Cybersecurity researcher and AI engineer building adaptive, intelligent defense systems">
+    <meta property="og:image" content="https://rexmirak.github.io/portfolio/assets/images/profile/profile_image.png">
+    <meta property="og:site_name" content="Karim Ahmed Portfolio">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rexmirak.github.io/portfolio/about.html">
+    <meta name="twitter:title" content="About - Karim Ahmed">
+    <meta name="twitter:description" content="Cybersecurity researcher and AI engineer building adaptive, intelligent defense systems">
+    <meta name="twitter:image" content="https://rexmirak.github.io/portfolio/assets/images/profile/profile_image.png">
+    <link rel="shortcut icon" href="./assets/images/profile/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://rexmirak.github.io/portfolio/about.html" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        
+        body::after {
+            content: '';
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.15;
+            top: 20%;
+            right: 10%;
+            background: hsl(174, 100%, 42%);
+            animation: orbPulse 8s infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        @keyframes orbPulse {
+            0%, 100% { transform: scale(1); opacity: 0.15; }
+            50% { transform: scale(1.5); opacity: 0.25; }
+        }
+        
+        main, aside {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Page Transition */
+        body {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Enhanced card hover effects */
+        .service-item, .timeline-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-item:hover {
+            transform: translateX(10px);
+        }
+        
+        /* Floating particles */
+        .particle {
+            position: fixed;
+            width: 2px;
+            height: 2px;
+            background: hsl(174, 100%, 42%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0;
+            animation: particleFloat 8s infinite;
+        }
+        
+        @keyframes particleFloat {
+            0%, 100% { opacity: 0; transform: translateY(0) translateX(0); }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) translateX(50px); }
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Karim Ahmed",
+  "jobTitle": "Cybersecurity and AI Engineer",
+  "description": "Cybersecurity researcher and AI engineer specializing in adaptive defense systems",
+  "url": "https://rexmirak.github.io/portfolio/",
+  "sameAs": [
+    "https://www.linkedin.com/in/karim-ahmed-a9081a185/",
+    "https://github.com/rexmirak"
+  ],
+  "alumniOf": "The German University in Cairo"
+}
+</script>
+</head>
+
+<body>
+    <main>
+        <!-- Sidebar -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./assets/images/profile/profile_image.png" alt="Karim Ahmed" width="140"/>
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Karim Ahmed">Karim Ahmed</h1>
+                    <p class="title" style="text-align: center;">Cybersecurity Researcher <br /> and Engineer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a style="font-size: 0.7rem;" href="mailto:karim.ahmed4815@gmail.com" class="contact-link">karim.ahmed4815@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Cairo, Egypt</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://github.com/rexmirak" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/karim-ahmed-a9081a185/" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/rexmirak/" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://substack.com/@rexmirak" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CV Download Button -->
+            <div class="cv-download">
+                <a href="./assets/cv/Karim Ahmed - Security Engineer.pdf" download="Karim_Ahmed_CV.pdf" class="cv-link">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link active">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="resume.html" class="navbar-link">Resume</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="portfolio.html" class="navbar-link">Portfolio</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link" style="color: var(--orange-yellow-crayola);">
+                            <ion-icon name="home-outline" style="vertical-align: middle;"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- About Content -->
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I'm Karim Ahmed, a <span style="display: inline; font-weight: bold;">cybersecurity researcher, AI engineer, and educator</span> with a Master's degree in Computer Science and Engineering from The German University in Cairo, specializing in <span style="display: inline; font-weight: bold;">AI and cybersecurity at their intersection</span>—both offensive (red team) and defensive (blue team) operations. As an <span style="display: inline; font-weight: bold;">ISC2 member since October 2024</span> and Senior Teaching Assistant, I combine cutting-edge research with practical teaching experience (250+ students) in advanced computing and cloud technologies.
+                    </p>
+
+                    <p>
+                        My expertise spans <span style="display: inline; font-weight: bold;">AI-powered security solutions, adaptive cyber defense, and full-stack development.</span> I architect intelligent security systems using MITRE ATT&CK and D3FEND frameworks, develop reinforcement learning agents for moving target defense, and build production applications with the MERN stack. My Master's thesis focused on self-adaptive agentic architectures for real-time cyber threat response—pioneering automated defense mechanisms that leverage AI for both red team attack simulation and blue team incident response.
+                    </p>
+
+                    <p>
+                        I bring <span style="display: inline; font-weight: bold;">resilience, innovation, and deep technical expertise</span> to every challenge. Whether conducting penetration testing, developing RAG pipelines and LLM applications, or deploying secure cloud infrastructure on AWS, I'm driven to build intelligent security solutions that protect organizations while advancing the field through research and mentorship.
+                    </p>
+                </section>
+
+                <!-- Professional Focus -->
+                <section class="service">
+                    <h3 class="h3 service-title">Professional Focus</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="shield-checkmark"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Cybersecurity & Security Analysis</h4>
+
+                                <p class="service-item-text">
+                                    Proficient in security tools including Nmap, Nessus, Wireshark, Metasploit, and Burp Suite. Knowledge of OWASP Top 10, penetration testing, and security best practices. Certified: Google Cybersecurity Professional, ISC2 Certified in Cybersecurity, OWASP Top 10.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="school"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Academic Research & Teaching</h4>
+
+                                <p class="service-item-text">
+                                    Teaching Assistant at The German University in Cairo for CSEN 701 (Advanced Computer Lab) and Cloud Computing courses. Facilitated hands-on learning for over 250 students in web development using the MERN stack and cloud computing technologies.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="cloud"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Cloud Computing & Infrastructure</h4>
+
+                                <p class="service-item-text">
+                                    Experience with AWS and GCP cloud platforms. Proficient in containerization and orchestration using Docker and Kubernetes. AWS Certified Cloud Practitioner (2024).
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="code-slash"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Full-Stack Development</h4>
+
+                                <p class="service-item-text">
+                                    Proficient in MERN stack (MongoDB, Express.js, React, Node.js). Experience with Next.js, React, and Tailwind CSS. Frontend development with focus on responsive and user-friendly interfaces. Developed and maintained CI/CD pipelines.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        // Create floating particles
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 8 + 's';
+            particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            document.body.appendChild(particle);
+        }
+    </script>
+</body>
+</html>

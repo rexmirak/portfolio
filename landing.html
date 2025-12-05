@@ -5,53 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karim Ahmed | Cybersecurity & AI Engineer</title>
     <meta name="description" content="Welcome to Karim Ahmed's portfolio — cybersecurity researcher and AI engineer building adaptive, intelligent defense systems.">
-    <meta name="keywords" content="Karim Ahmed, Cybersecurity, AI, Security Engineer, Portfolio, Moving Target Defense, IPS, Penetration Testing">
-    <meta name="author" content="Karim Ahmed">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rexmirak.github.io/portfolio/">
-    <meta property="og:title" content="Karim Ahmed | Cybersecurity & AI Engineer">
-    <meta property="og:description" content="Cybersecurity researcher and AI engineer building adaptive, intelligent defense systems. Specializing in AI-powered threat response and moving target defense.">
-    <meta property="og:image" content="https://rexmirak.github.io/portfolio/assets/images/profile/profile_image.png">
-    <meta property="og:site_name" content="Karim Ahmed Portfolio">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://rexmirak.github.io/portfolio/">
-    <meta name="twitter:title" content="Karim Ahmed | Cybersecurity & AI Engineer">
-    <meta name="twitter:description" content="Cybersecurity researcher and AI engineer building adaptive, intelligent defense systems.">
-    <meta name="twitter:image" content="https://rexmirak.github.io/portfolio/assets/images/profile/profile_image.png">
-    
+    <meta name="keywords" content="Karim Ahmed, Cybersecurity, AI, Security Engineer, Portfolio">
     <link rel="shortcut icon" href="./assets/images/profile/favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://rexmirak.github.io/portfolio/" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Structured Data for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Karim Ahmed",
-      "url": "https://rexmirak.github.io/portfolio/",
-      "image": "https://rexmirak.github.io/portfolio/assets/images/profile/profile_image.png",
-      "jobTitle": "Cybersecurity Researcher & AI Engineer",
-      "description": "Cybersecurity researcher and AI engineer building adaptive, intelligent defense systems",
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "German University in Cairo"
-      },
-      "knowsAbout": ["Cybersecurity", "Artificial Intelligence", "Moving Target Defense", "Intrusion Prevention Systems", "Machine Learning", "Full-Stack Development"],
-      "sameAs": [
-        "https://github.com/rexmirak",
-        "https://www.linkedin.com/in/karim-ahmed-97a2781b6/",
-        "https://www.researchgate.net/profile/Karim-Ahmed-83"
-      ]
-    }
-    </script>
     
     <style>
         :root {
@@ -151,12 +110,6 @@
         .hero {
             text-align: center;
             margin-bottom: 80px;
-            position: relative;
-        }
-        
-        .hero-title-container {
-            position: relative;
-            display: inline-block;
         }
         
         .hero-title {
@@ -169,138 +122,11 @@
             background-clip: text;
             animation: gradientShift 5s ease infinite;
             background-size: 200% 200%;
-            position: relative;
-            z-index: 2;
         }
         
         @keyframes gradientShift {
             0%, 100% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
-        }
-        
-        /* Orbiting Security Icons Around Name */
-        .orbit-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 150%;
-            height: 150%;
-            pointer-events: none;
-            z-index: 1;
-        }
-        
-        .orbit-icon {
-            position: absolute;
-            font-size: 35px;
-            opacity: 0;
-            animation: orbitIcon 12s linear infinite;
-        }
-        
-        .orbit-icon:nth-child(1) {
-            color: var(--accent-cyan);
-            animation-delay: 0s;
-        }
-        
-        .orbit-icon:nth-child(2) {
-            color: var(--accent-orange);
-            animation-delay: -3s;
-        }
-        
-        .orbit-icon:nth-child(3) {
-            color: var(--accent-purple);
-            animation-delay: -6s;
-        }
-        
-        .orbit-icon:nth-child(4) {
-            color: var(--accent-cyan);
-            animation-delay: -9s;
-        }
-        
-        @keyframes orbitIcon {
-            0% {
-                transform: rotate(0deg) translateX(250px) rotate(0deg);
-                opacity: 0;
-            }
-            10% {
-                opacity: 0.6;
-            }
-            90% {
-                opacity: 0.6;
-            }
-            100% {
-                transform: rotate(360deg) translateX(250px) rotate(-360deg);
-                opacity: 0;
-            }
-        }
-        
-        /* Floating Tech Icons in Hero Area */
-        .float-icon {
-            position: absolute;
-            font-size: 28px;
-            opacity: 0.25;
-            animation: floatAround 18s ease-in-out infinite;
-        }
-        
-        .float-icon:nth-child(1) {
-            color: var(--accent-cyan);
-            top: 5%;
-            left: 5%;
-            animation-delay: 0s;
-        }
-        
-        .float-icon:nth-child(2) {
-            color: var(--accent-orange);
-            top: 10%;
-            right: 8%;
-            animation-delay: -6s;
-        }
-        
-        .float-icon:nth-child(3) {
-            color: var(--accent-purple);
-            bottom: 10%;
-            left: 10%;
-            animation-delay: -12s;
-        }
-        
-        .float-icon:nth-child(4) {
-            color: var(--accent-cyan);
-            bottom: 5%;
-            right: 5%;
-            animation-delay: -3s;
-        }
-        
-        .float-icon:nth-child(5) {
-            color: var(--accent-orange);
-            top: 50%;
-            left: 2%;
-            animation-delay: -9s;
-        }
-        
-        .float-icon:nth-child(6) {
-            color: var(--accent-purple);
-            top: 50%;
-            right: 2%;
-            animation-delay: -15s;
-        }
-        
-        @keyframes floatAround {
-            0%, 100% {
-                transform: translate(0, 0) rotate(0deg) scale(1);
-                opacity: 0.25;
-            }
-            25% {
-                transform: translate(30px, -30px) rotate(90deg) scale(1.2);
-                opacity: 0.5;
-            }
-            50% {
-                transform: translate(50px, 20px) rotate(180deg) scale(0.9);
-                opacity: 0.3;
-            }
-            75% {
-                transform: translate(20px, 40px) rotate(270deg) scale(1.1);
-                opacity: 0.5;
-            }
         }
         
         .hero-subtitle {
@@ -339,7 +165,6 @@
             gap: 30px;
             margin-top: 60px;
             padding: 0 20px;
-            margin-bottom: 80px;
         }
         
         .nav-card {
@@ -355,17 +180,12 @@
             overflow: hidden;
             transition: all 0.3s ease;
             opacity: 0;
-            animation: fadeInUp 1s forwards, cardFloat 6s ease-in-out infinite;
+            animation: fadeInUp 1s forwards;
         }
         
-        .nav-card:nth-child(1) { animation-delay: 1s, 0s; }
-        .nav-card:nth-child(2) { animation-delay: 1.2s, 2s; }
-        .nav-card:nth-child(3) { animation-delay: 1.4s, 4s; }
-        
-        @keyframes cardFloat {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
+        .nav-card:nth-child(1) { animation-delay: 1s; }
+        .nav-card:nth-child(2) { animation-delay: 1.2s; }
+        .nav-card:nth-child(3) { animation-delay: 1.4s; }
         
         .nav-card::before {
             content: '';
@@ -394,17 +214,10 @@
             margin-bottom: 20px;
             display: inline-block;
             transition: transform 0.3s ease;
-            animation: iconPulse 3s ease-in-out infinite;
-        }
-        
-        @keyframes iconPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
         }
         
         .nav-card:hover .nav-card-icon {
             transform: scale(1.2) rotate(5deg);
-            animation: none;
         }
         
         .nav-card:nth-child(1) .nav-card-icon { color: var(--accent-cyan); }
@@ -460,47 +273,6 @@
             50% { transform: scale(1.5); opacity: 0.25; }
         }
         
-        /* Highlight Cards */
-        .highlight-card {
-            background: linear-gradient(135deg, var(--bg-secondary) 0%, hsl(240, 2%, 15%) 100%);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 30px 25px;
-            text-align: center;
-            transition: all 0.3s ease;
-            animation: cardFloat 8s ease-in-out infinite;
-        }
-        
-        .highlight-card:nth-child(1) { animation-delay: 1s; }
-        .highlight-card:nth-child(2) { animation-delay: 3s; }
-        .highlight-card:nth-child(3) { animation-delay: 5s; }
-        
-        .highlight-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent-orange);
-            box-shadow: 0 15px 40px rgba(255, 178, 0, 0.2);
-        }
-        
-        .highlight-icon {
-            font-size: 50px;
-            color: var(--accent-orange);
-            margin-bottom: 20px;
-            animation: iconPulse 3s ease-in-out infinite;
-        }
-        
-        .highlight-card h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 15px;
-        }
-        
-        .highlight-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-grid {
@@ -525,45 +297,7 @@
     <!-- Main Content -->
     <div class="container">
         <section class="hero">
-            <!-- Floating Background Icons -->
-            <div class="float-icon">
-                <ion-icon name="shield-checkmark"></ion-icon>
-            </div>
-            <div class="float-icon">
-                <ion-icon name="hardware-chip"></ion-icon>
-            </div>
-            <div class="float-icon">
-                <ion-icon name="lock-closed"></ion-icon>
-            </div>
-            <div class="float-icon">
-                <ion-icon name="analytics"></ion-icon>
-            </div>
-            <div class="float-icon">
-                <ion-icon name="git-network"></ion-icon>
-            </div>
-            <div class="float-icon">
-                <ion-icon name="bug"></ion-icon>
-            </div>
-            
-            <!-- Name with Orbiting Icons -->
-            <div class="hero-title-container">
-                <div class="orbit-container">
-                    <div class="orbit-icon">
-                        <ion-icon name="shield"></ion-icon>
-                    </div>
-                    <div class="orbit-icon">
-                        <ion-icon name="brain"></ion-icon>
-                    </div>
-                    <div class="orbit-icon">
-                        <ion-icon name="key"></ion-icon>
-                    </div>
-                    <div class="orbit-icon">
-                        <ion-icon name="code-slash"></ion-icon>
-                    </div>
-                </div>
-                <h1 class="hero-title">Karim Ahmed</h1>
-            </div>
-            
+            <h1 class="hero-title">Karim Ahmed</h1>
             <p class="hero-subtitle">Cybersecurity Researcher & AI Engineer</p>
             <p class="hero-description">
                 Building adaptive, intelligent defense systems at the intersection of artificial intelligence and cybersecurity. 
@@ -572,7 +306,7 @@
         </section>
 
         <div class="nav-grid">
-            <a href="./about.html" class="nav-card">
+            <a href="about.html" class="nav-card">
                 <div class="nav-card-icon">
                     <ion-icon name="person-outline"></ion-icon>
                 </div>
@@ -582,7 +316,7 @@
                 </p>
             </a>
 
-            <a href="./resume.html" class="nav-card">
+            <a href="resume.html" class="nav-card">
                 <div class="nav-card-icon">
                     <ion-icon name="document-text-outline"></ion-icon>
                 </div>
@@ -592,7 +326,7 @@
                 </p>
             </a>
 
-            <a href="./portfolio.html" class="nav-card">
+            <a href="portfolio.html" class="nav-card">
                 <div class="nav-card-icon">
                     <ion-icon name="briefcase-outline"></ion-icon>
                 </div>
@@ -602,36 +336,6 @@
                 </p>
             </a>
         </div>
-
-        <!-- Featured Highlights -->
-        <section class="highlights" style="margin-top: 100px; opacity: 0; animation: fadeInUp 1s 1.6s forwards;">
-            <h2 style="text-align: center; font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 50px; color: var(--text-primary);">
-                Featured Highlights
-            </h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 0 20px;">
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <ion-icon name="shield-checkmark-outline"></ion-icon>
-                    </div>
-                    <h3>LLM-Powered MTD</h3>
-                    <p>First practical integration of Large Language Models for real-time Moving Target Defense orchestration, achieving <2min incident response.</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <ion-icon name="school-outline"></ion-icon>
-                    </div>
-                    <h3>Educator & Researcher</h3>
-                    <p>Senior Teaching Assistant at GUC, mentoring 250+ students in advanced computing, cloud technologies, and the MERN stack.</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <ion-icon name="ribbon-outline"></ion-icon>
-                    </div>
-                    <h3>Certified Professional</h3>
-                    <p>AWS Cloud Practitioner, ISC2 Certified in Cybersecurity, Google Cybersecurity Professional, and OWASP Top 10 certified.</p>
-                </div>
-            </div>
-        </section>
     </div>
 
     <!-- Ionicons -->

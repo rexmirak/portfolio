@@ -342,6 +342,29 @@ main {
   overflow-y: auto;
 }
 
+/* Fix mobile visibility - ensure sidebar is always visible */
+@media (max-width: 767px) {
+  .sidebar {
+    max-height: 100vh;
+    overflow: visible;
+  }
+  
+  .info-content .name {
+    font-size: var(--fs-3);
+    white-space: normal;
+    text-align: left;
+    word-wrap: break-word;
+  }
+  
+  .info-content .title {
+    font-size: var(--fs-7);
+    white-space: normal;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
 .sidebar-info {
   position: relative;
   display: flex;
