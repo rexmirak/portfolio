@@ -1,216 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free LLMs - Local AI Interface - Karim Ahmed</title>
-    <meta name="description" content="Interactive web interface for running Large Language Models locally. Connect to local LLM servers with a modern, responsive UI supporting multiple AI models.">
-    <meta name="keywords" content="Local LLM, AI Interface, Ollama, Free AI, LLM Chat, Open Source AI, Privacy-Focused AI">
-    <meta name="author" content="Karim Ahmed">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://rexmirak.github.io/portfolio/projects/free_llms/">
-    <meta property="og:title" content="Free LLMs - Local AI Interface">
-    <meta property="og:description" content="Interactive web interface for running Large Language Models locally with privacy and control.">
-    <meta property="og:image" content="https://rexmirak.github.io/portfolio/assets/images/projects/free_llms/screenshot.png">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Free LLMs - Local AI Interface">
-    <meta name="twitter:description" content="Interactive web interface for running Large Language Models locally.">
-    <meta name="twitter:image" content="https://rexmirak.github.io/portfolio/assets/images/projects/free_llms/screenshot.png">
-    
-    <link rel="shortcut icon" href="../../assets/images/profile/favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://rexmirak.github.io/portfolio/projects/free_llms/" />
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --white-2: hsl(0, 0%, 98%);
-            --orange-yellow-crayola: hsl(45, 100%, 72%);
-            --light-gray: hsl(0, 0%, 84%);
-            --jet: hsl(0, 0%, 22%);
-            --eerie-black-2: hsl(240, 2%, 12%);
-            --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
-            --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-            --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-            --transition-1: 0.25s ease;
-            --fs-4: 16px;
-            --fs-6: 14px;
-            --fs-8: 11px;
-        }
-    </style>
-    <meta name="description" content="Explore Karim Ahmed's cybersecurity and AI projects including REX Scan, Agentic IPS, Caldera simulations, and LLM-driven security tools.">
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "free-llms",
-  "operatingSystem": "Windows, macOS, Linux",
-  "applicationCategory": "WebApplication",
-  "creator": "Karim Ahmed",
-  "url": "https://github.com/rexmirak/free-llms"
-}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Moved | Karim Ahmed</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="refresh" content="0; url=https://rexmirak.duckdns.org/">
+  <link rel="canonical" href="https://rexmirak.duckdns.org/">
+  <script>
+    window.location.replace("https://rexmirak.duckdns.org/");
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Poppins, Arial, sans-serif;
+      background: #0f1117;
+      color: #f5f7fa;
+    }
+
+    main {
+      max-width: 32rem;
+      padding: 32px;
+      border: 1px solid #2d3440;
+      border-radius: 16px;
+      background: #171b22;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+    }
+
+    p {
+      margin: 0 0 12px;
+      line-height: 1.6;
+      color: #d6dce5;
+    }
+
+    a {
+      color: #ffd166;
+    }
+  </style>
 </head>
-<body style="background: hsl(0, 0%, 7%); color: hsl(0, 0%, 84%); font-family: 'Poppins', sans-serif; margin: 0; padding: 0;">
-    <main class="project-detail-wrapper">
-        <article class="project-detail active">
-            <!-- Header -->
-            <header>
-                <a href="../../portfolio.html" class="back-link">
-                    <ion-icon name="arrow-back-outline"></ion-icon>
-                    Back to Portfolio
-                </a>
-                <h1>Free LLMs - Local AI Interface</h1>
-                <div class="category-tags">
-                    <span class="category-tag" style="color: rgba(168, 85, 247, 0.9);">AI & Machine Learning</span>
-                    <a href="https://github.com/rexmirak/free-llms" target="_blank" class="github-link">
-                        <ion-icon name="logo-github"></ion-icon>
-                        View on GitHub
-                    </a>
-                </div>
-                <p>A modern, production-ready web application that provides a beautiful interface for interacting with local Large Language Models through Ollama.</p>
-            </header>
-
-            <!-- Problem & Solution -->
-            <section style="margin-bottom: 40px;">
-                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <ion-icon name="bulb-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
-                    Problem & Solution
-                </h2>
-                <div style="background: var(--border-gradient-onyx); padding: 25px; border-radius: 14px; position: relative;">
-                    <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                    <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Problem</h3>
-                    <p style="color: var(--light-gray); line-height: 1.8; margin-bottom: 20px;">
-                        Cloud-based AI services raise concerns about data privacy, require internet connectivity, and often come with API costs. While Ollama provides local LLM capabilities, it lacks a user-friendly interface for non-technical users and doesn't offer advanced features like chat management, model comparison, or hyperparameter tuning.
-                    </p>
-                    <h3 style="color: var(--orange-yellow-crayola); font-size: var(--fs-4); margin-bottom: 15px;">The Solution</h3>
-                    <p style="color: var(--light-gray); line-height: 1.8;">
-                        Free LLMs bridges this gap with a WhatsApp-inspired interface that makes local AI accessible to everyone. It provides complete control over your data with zero cloud dependencies, supports multiple models with customizable hyperparameters, and includes advanced features like DeepSeek reasoning visualization, real-time streaming responses, and comprehensive chat management—all running entirely on your local machine.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Technologies Used -->
-            <section style="margin-bottom: 40px;">
-                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <ion-icon name="construct-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
-                    Technologies Used
-                </h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--white-2); margin-bottom: 12px;">Frontend</h4>
-                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                            <span style="background: rgba(124, 58, 237, 0.1); border: 1px solid rgba(124, 58, 237, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Next.js 14</span>
-                            <span style="background: rgba(124, 58, 237, 0.1); border: 1px solid rgba(124, 58, 237, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">TypeScript</span>
-                            <span style="background: rgba(124, 58, 237, 0.1); border: 1px solid rgba(124, 58, 237, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Tailwind CSS</span>
-                            <span style="background: rgba(124, 58, 237, 0.1); border: 1px solid rgba(124, 58, 237, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">React</span>
-                        </div>
-                    </div>
-                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--white-2); margin-bottom: 12px;">AI & Backend</h4>
-                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                            <span style="background: rgba(124, 58, 237, 0.1); border: 1px solid rgba(124, 58, 237, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Ollama</span>
-                            <span style="background: rgba(124, 58, 237, 0.1); border: 1px solid rgba(124, 58, 237, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Server-Sent Events</span>
-                            <span style="background: rgba(124, 58, 237, 0.1); border: 1px solid rgba(124, 58, 237, 0.3); color: var(--white-2); padding: 4px 10px; border-radius: 12px; font-size: var(--fs-8);">Node.js</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Key Features -->
-            <section style="margin-bottom: 40px;">
-                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <ion-icon name="star-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
-                    Key Achievements
-                </h2>
-                <div style="display: grid; gap: 15px;">
-                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                            <ion-icon name="color-palette-outline" style="font-size: 20px;"></ion-icon>
-                            Intuitive WhatsApp-Inspired Interface
-                        </h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Designed a familiar 1/3-2/3 split layout with chat list and conversation view, complete with unread indicators, real-time updates, and a modern dark theme that makes AI interaction feel natural and accessible.</p>
-                    </div>
-                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                            <ion-icon name="brain-outline" style="font-size: 20px;"></ion-icon>
-                            DeepSeek Reasoning Visualization
-                        </h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Implemented real-time visualization of AI reasoning processes in collapsible sections, allowing users to see how models think through problems—perfect for learning, debugging, and building trust in AI decisions.</p>
-                    </div>
-                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                            <ion-icon name="settings-outline" style="font-size: 20px;"></ion-icon>
-                            Advanced Model Management
-                        </h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Built an intelligent model downloader with variant selection, real-time progress tracking, and hardware requirement indicators. Users can browse, download, and manage models from Ollama's library with a single click.</p>
-                    </div>
-                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                            <ion-icon name="save-outline" style="font-size: 20px;"></ion-icon>
-                            Complete Privacy & Local Storage
-                        </h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Architected a zero-cloud-dependency system with all conversations stored locally in JSON format. Includes chat persistence, export to Markdown, and search functionality—ensuring complete data ownership and privacy.</p>
-                    </div>
-                    <div style="background: var(--border-gradient-onyx); padding: 20px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                            <ion-icon name="options-outline" style="font-size: 20px;"></ion-icon>
-                            Fine-Grained Control
-                        </h4>
-                        <p style="color: var(--light-gray); line-height: 1.6;">Developed per-chat hyperparameter customization (temperature, top-p, top-k, max tokens) and system message configuration, giving users precise control over AI behavior for different use cases.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Screenshots -->
-            <section style="margin-bottom: 40px;">
-                <h2 style="color: var(--white-2); font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <ion-icon name="images-outline" style="color: var(--orange-yellow-crayola); font-size: 28px;"></ion-icon>
-                    Screenshots
-                </h2>
-                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <img src="../../assets/images/projects/free_llms/Screenshot 2025-11-03 at 12.17.46.png" alt="Free LLMs Interface" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">WhatsApp-Inspired Chat Interface</p>
-                    </div>
-                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <img src="../../assets/images/projects/free_llms/Screenshot 2025-11-03 at 12.19.20.png" alt="DeepSeek Reasoning" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">DeepSeek Reasoning Visualization</p>
-                    </div>
-                    <div style="background: var(--border-gradient-onyx); padding: 10px; border-radius: 14px; position: relative;">
-                        <div style="position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1;"></div>
-                        <img src="../../assets/images/projects/free_llms/Screenshot 2025-11-03 at 12.23.13.png" alt="Model Management" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-                        <p style="color: var(--light-gray); font-size: var(--fs-8); text-align: center;">Advanced Model Management</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer style="margin-top: 50px; padding-top: 30px; border-top: 1px solid hsl(0, 0%, 22%); text-align: center;">
-                <a href="../../portfolio.html" style="display: inline-flex; align-items: center; gap: 8px; color: hsl(45, 100%, 72%); font-size: 14px; text-decoration: none;">
-                    <ion-icon name="arrow-back-outline"></ion-icon>
-                    Back to Portfolio
-                </a>
-            </footer>
-        </article>
-    </main>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<body>
+  <main>
+    <h1>Project page moved</h1>
+    <p>This legacy GitHub Pages project URL now points to <a href="https://rexmirak.duckdns.org/">rexmirak.duckdns.org</a>.</p>
+    <p>If you are not redirected automatically, open the link above.</p>
+  </main>
 </body>
 </html>

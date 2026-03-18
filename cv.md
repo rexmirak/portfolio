@@ -1,7 +1,7 @@
 # KARIM AHMED
 ### Cybersecurity Researcher & AI Engineer
 
-karim.ahmed4815@gmail.com | Cairo, Egypt | [LinkedIn](https://linkedin.com/in/karim-ahmed-a9081a185) | [GitHub](https://github.com/rexmirak) | [Portfolio](https://rexmirak.github.io/portfolio)
+karim.ahmed4815@gmail.com | Cairo, Egypt | [LinkedIn](https://linkedin.com/in/karim-ahmed-a9081a185) | [GitHub](https://github.com/rexmirak) | [Portfolio](https://rexmirak.duckdns.org/)
 
 ---
 

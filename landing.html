@@ -1,372 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karim Ahmed | Cybersecurity & AI Engineer</title>
-    <meta name="description" content="Welcome to Karim Ahmed's portfolio — cybersecurity researcher and AI engineer building adaptive, intelligent defense systems.">
-    <meta name="keywords" content="Karim Ahmed, Cybersecurity, AI, Security Engineer, Portfolio">
-    <link rel="shortcut icon" href="./assets/images/profile/favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://rexmirak.github.io/portfolio/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-primary: hsl(0, 0%, 7%);
-            --bg-secondary: hsl(240, 2%, 12%);
-            --accent-orange: hsl(45, 100%, 72%);
-            --accent-cyan: hsl(174, 100%, 42%);
-            --accent-purple: hsl(271, 76%, 53%);
-            --text-primary: hsl(0, 0%, 98%);
-            --text-secondary: hsl(0, 0%, 84%);
-            --border-color: hsl(0, 0%, 22%);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            overflow-x: hidden;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1400px;
-            padding: 40px 20px;
-            position: relative;
-            z-index: 10;
-        }
-        
-        /* Animated Background */
-        .animated-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            overflow: hidden;
-        }
-        
-        .grid-overlay {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-            background-size: 50px 50px;
-            animation: gridMove 20s linear infinite;
-        }
-        
-        @keyframes gridMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
-        }
-        
-        .particle {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: var(--accent-cyan);
-            border-radius: 50%;
-            opacity: 0;
-            animation: particleFloat 8s infinite;
-        }
-        
-        @keyframes particleFloat {
-            0%, 100% { opacity: 0; transform: translateY(0) translateX(0); }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-100vh) translateX(50px); }
-        }
-        
-        .security-icon {
-            position: absolute;
-            font-size: 40px;
-            color: var(--accent-orange);
-            opacity: 0.1;
-            animation: iconFloat 15s infinite ease-in-out;
-        }
-        
-        @keyframes iconFloat {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(180deg); }
-        }
-        
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            margin-bottom: 80px;
-        }
-        
-        .hero-title {
-            font-size: clamp(3rem, 8vw, 6rem);
-            font-weight: 700;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-cyan) 50%, var(--accent-purple) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradientShift 5s ease infinite;
-            background-size: 200% 200%;
-        }
-        
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-        
-        .hero-subtitle {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            color: var(--text-secondary);
-            margin-bottom: 15px;
-            opacity: 0;
-            animation: fadeInUp 1s 0.5s forwards;
-        }
-        
-        .hero-description {
-            font-size: clamp(0.9rem, 2vw, 1.1rem);
-            color: var(--text-secondary);
-            max-width: 700px;
-            margin: 0 auto 40px;
-            line-height: 1.8;
-            opacity: 0;
-            animation: fadeInUp 1s 0.8s forwards;
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Navigation Cards */
-        .nav-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-            padding: 0 20px;
-        }
-        
-        .nav-card {
-            background: linear-gradient(135deg, var(--bg-secondary) 0%, hsl(240, 2%, 15%) 100%);
-            border: 2px solid var(--border-color);
-            border-radius: 20px;
-            padding: 40px 30px;
-            text-align: center;
-            cursor: pointer;
-            text-decoration: none;
-            color: var(--text-primary);
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            opacity: 0;
-            animation: fadeInUp 1s forwards;
-        }
-        
-        .nav-card:nth-child(1) { animation-delay: 1s; }
-        .nav-card:nth-child(2) { animation-delay: 1.2s; }
-        .nav-card:nth-child(3) { animation-delay: 1.4s; }
-        
-        .nav-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, transparent 0%, rgba(255, 178, 0, 0.1) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .nav-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent-orange);
-            box-shadow: 0 20px 60px rgba(255, 178, 0, 0.3);
-        }
-        
-        .nav-card:hover::before {
-            opacity: 1;
-        }
-        
-        .nav-card-icon {
-            font-size: 60px;
-            margin-bottom: 20px;
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-        
-        .nav-card:hover .nav-card-icon {
-            transform: scale(1.2) rotate(5deg);
-        }
-        
-        .nav-card:nth-child(1) .nav-card-icon { color: var(--accent-cyan); }
-        .nav-card:nth-child(2) .nav-card-icon { color: var(--accent-orange); }
-        .nav-card:nth-child(3) .nav-card-icon { color: var(--accent-purple); }
-        
-        .nav-card-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .nav-card-description {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        
-        /* Glowing orb effect */
-        .glow-orb {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            filter: blur(100px);
-            opacity: 0.15;
-            animation: orbPulse 8s infinite;
-        }
-        
-        .glow-orb-1 {
-            background: var(--accent-cyan);
-            top: 10%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-        
-        .glow-orb-2 {
-            background: var(--accent-orange);
-            bottom: 10%;
-            right: 10%;
-            animation-delay: 2s;
-        }
-        
-        .glow-orb-3 {
-            background: var(--accent-purple);
-            top: 50%;
-            left: 50%;
-            animation-delay: 4s;
-        }
-        
-        @keyframes orbPulse {
-            0%, 100% { transform: scale(1); opacity: 0.15; }
-            50% { transform: scale(1.5); opacity: 0.25; }
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero-title {
-                font-size: 3rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karim Ahmed Portfolio Moved</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="refresh" content="0; url=https://rexmirak.duckdns.org/">
+  <link rel="canonical" href="https://rexmirak.duckdns.org/">
+  <script>
+    window.location.replace("https://rexmirak.duckdns.org/");
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Poppins, Arial, sans-serif;
+      background: #0f1117;
+      color: #f5f7fa;
+    }
+
+    main {
+      max-width: 32rem;
+      padding: 32px;
+      border: 1px solid #2d3440;
+      border-radius: 16px;
+      background: #171b22;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+    }
+
+    p {
+      margin: 0 0 12px;
+      line-height: 1.6;
+      color: #d6dce5;
+    }
+
+    a {
+      color: #ffd166;
+    }
+  </style>
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="grid-overlay"></div>
-        <div class="glow-orb glow-orb-1"></div>
-        <div class="glow-orb glow-orb-2"></div>
-        <div class="glow-orb glow-orb-3"></div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <section class="hero">
-            <h1 class="hero-title">Karim Ahmed</h1>
-            <p class="hero-subtitle">Cybersecurity Researcher & AI Engineer</p>
-            <p class="hero-description">
-                Building adaptive, intelligent defense systems at the intersection of artificial intelligence and cybersecurity. 
-                Specializing in AI-powered threat response, moving target defense, and autonomous security orchestration.
-            </p>
-        </section>
-
-        <div class="nav-grid">
-            <a href="about.html" class="nav-card">
-                <div class="nav-card-icon">
-                    <ion-icon name="person-outline"></ion-icon>
-                </div>
-                <h2 class="nav-card-title">About Me</h2>
-                <p class="nav-card-description">
-                    Learn about my background, expertise, and professional focus areas in cybersecurity and AI engineering.
-                </p>
-            </a>
-
-            <a href="resume.html" class="nav-card">
-                <div class="nav-card-icon">
-                    <ion-icon name="document-text-outline"></ion-icon>
-                </div>
-                <h2 class="nav-card-title">Resume</h2>
-                <p class="nav-card-description">
-                    Explore my professional experience, education, certifications, and technical skills.
-                </p>
-            </a>
-
-            <a href="portfolio.html" class="nav-card">
-                <div class="nav-card-icon">
-                    <ion-icon name="briefcase-outline"></ion-icon>
-                </div>
-                <h2 class="nav-card-title">Portfolio</h2>
-                <p class="nav-card-description">
-                    View my projects spanning AI-powered security systems, moving target defense, and full-stack applications.
-                </p>
-            </a>
-        </div>
-    </div>
-
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-    <!-- Dynamic Particles -->
-    <script>
-        // Create floating particles
-        const animatedBg = document.querySelector('.animated-bg');
-        for (let i = 0; i < 30; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 8 + 's';
-            particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
-            animatedBg.appendChild(particle);
-        }
-        
-        // Create security icons
-        const icons = ['shield-checkmark-outline', 'lock-closed-outline', 'key-outline', 'server-outline', 'code-slash-outline'];
-        for (let i = 0; i < 8; i++) {
-            const iconDiv = document.createElement('div');
-            iconDiv.className = 'security-icon';
-            iconDiv.innerHTML = `<ion-icon name="${icons[Math.floor(Math.random() * icons.length)]}"></ion-icon>`;
-            iconDiv.style.top = Math.random() * 100 + '%';
-            iconDiv.style.left = Math.random() * 100 + '%';
-            iconDiv.style.animationDelay = Math.random() * 15 + 's';
-            iconDiv.style.animationDuration = (Math.random() * 10 + 10) + 's';
-            animatedBg.appendChild(iconDiv);
-        }
-    </script>
+  <main>
+    <h1>Portfolio moved</h1>
+    <p>This legacy GitHub Pages entrypoint now lives at <a href="https://rexmirak.duckdns.org/">rexmirak.duckdns.org</a>.</p>
+    <p>If you are not redirected automatically, open the link above.</p>
+  </main>
 </body>
 </html>
